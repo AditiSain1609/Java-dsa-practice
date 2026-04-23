@@ -1,0 +1,32 @@
+class Solution {
+    public int thirdMax(int[] nums) {
+        Long largest = null;
+        Long sl = null;
+        Long tl = null;
+
+        for(int num : nums){
+            long val = num;
+
+            if(largest != null && val == largest ||
+               sl != null && val == sl ||
+               tl != null && val == tl){
+                continue; 
+            }
+
+            if(largest == null || val > largest){
+                tl = sl;
+                sl = largest;
+                largest = val;
+            }
+            else if(sl == null || val > sl){
+                tl = sl;
+                sl = val;
+            }
+            else if(tl == null || val > tl){
+                tl = val;
+            }
+        }
+
+        return (tl == null) ? largest.intValue() : tl.intValue();
+    }
+}
