@@ -30,6 +30,9 @@ Daily LeetCode DSA questions in Java
 ## Day 10
 - Best time to buy and Sell Stock
 - Trapping Rain Water
+## Day 11
+- Valid palindrome
+- Fibonacci number
 
 
 
