@@ -1,4 +1,4 @@
-# Java-dsa-practice
+# Java-DSA-Practice
 Daily LeetCode DSA questions in Java
 ## Day 1
 - Two Sum
