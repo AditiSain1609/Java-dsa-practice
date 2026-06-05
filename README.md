@@ -33,6 +33,18 @@ Daily LeetCode DSA questions in Java
 ## Day 11
 - Valid palindrome
 - Fibonacci number
+## Day 12
+- Relative Sort Array
+- Sort Colours
+## Day 13
+- Minimum absolute difference
+- Rotate Array
+## Day 14
+- Height checker
+- Sort an Array
+## Day 15
+- Frequency of the most frequent element
+- Roman to Integer
 
 
 
