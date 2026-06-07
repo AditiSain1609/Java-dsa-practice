@@ -1,0 +1,20 @@
+class Solution {
+    public int subarraysDivByK(int[] nums, int k) {
+        int sum =0;
+        int count =0;
+       HashMap<Integer,Integer> map = new HashMap<>();
+       map.put(0,1);
+       for(int n :nums){
+        sum +=n;
+        int ren = sum %k;
+        if(ren<0){
+            ren+=k;
+        }
+        if(map.containsKey(ren)){
+          count +=map.get(ren);
+       }
+       map.put(ren,map.getOrDefault(ren,0)+1);
+       }
+       return count;
+    }
+}
