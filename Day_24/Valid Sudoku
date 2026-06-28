@@ -1,0 +1,32 @@
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+      HashSet<String> row = new HashSet<>();
+      HashSet<String> col=new HashSet<>();
+      HashSet<String> boxes = new HashSet<>();
+      for(int i=0;i<9;i++){
+        for(int j=0;j<9;j++){
+            char curr = board[i][j];
+            if(curr=='.'){
+                continue;
+            }
+            String rowkey = i+"-"+curr;
+            String colkey = j+"-"+curr;
+            int box = (i/3)*3 +(j/3);
+            String boxkey = box +"-"+curr;
+            if (row.contains(rowkey))
+    return false;
+
+if (col.contains(colkey))
+    return false;
+
+if (boxes.contains(boxkey))
+    return false;
+
+row.add(rowkey);
+col.add(colkey);
+boxes.add(boxkey);
+        }
+      }
+      return true;
+    }
+}
