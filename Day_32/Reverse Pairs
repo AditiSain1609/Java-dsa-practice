@@ -1,0 +1,49 @@
+class Solution {
+    int count =0;
+    public int reversePairs(int[] nums) {
+        mergesort(nums,0,nums.length-1);
+        return count;
+        
+    }
+    public void mergesort(int[]nums,int left,int right){
+        if(left>=right){
+            return ;
+        }
+        int mid= left+(right-left)/2;
+        mergesort(nums,left,mid);
+        mergesort(nums,mid+1,right);
+        arrangesort(nums,mid,left,right);
+    }
+    public void arrangesort(int[] nums,int mid,int left,int right){
+        int j=mid+1;
+        int i =left;
+        for(int s=left;s<=mid;s++){
+            while(j<=right && nums[s]>2L *nums[j]){
+                j++;
+            }
+            count += j-(mid+1);
+        }
+        int temp[] = new int[right-left+1];
+        int k = 0;
+        int p = mid+1;
+       
+        while(i<=mid && p<=right){
+            if(nums[i]<=nums[p]){
+              temp[k++]=nums[i++];
+             
+            }
+            else{
+                temp[k++]= nums[p++];
+            }
+        }
+        while(i<=mid){
+            temp[k++]=nums[i++];
+        }
+        while(p<=right){
+            temp[k++]=nums[p++];
+        }
+        for(int x=0;x<temp.length;x++){
+            nums[left+x] = temp[x];
+        }
+    }
+}
