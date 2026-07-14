@@ -1,0 +1,28 @@
+class Solution {
+    public int NthRoot(int N, int M) {
+        int left=1;
+        int right = M/3;
+        
+        while(left<=right){
+            int ans =1;
+            int mid = left+(right-left)/2;
+            for(int i=1;i<N;i++){
+           ans*=mid;
+            }
+            if(ans>M){
+                break;
+            }
+         if(ans==M){
+            return mid;
+         }
+         if(ans<M){
+            left = mid+1;
+         }
+         else{
+            right= mid-1;
+         }
+        }
+        
+        return -1;
+    }
+}
