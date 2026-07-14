@@ -1,0 +1,30 @@
+class Solution {
+    public int calculateSum(int[]nums,int mid){
+        int sum =0;
+        for(int i=0;i<nums.length;i++){
+            
+              sum += (nums[i] + mid - 1) / mid;
+        }
+        return sum;
+    }
+    public int smallestDivisor(int[] nums, int threshold) {
+        if(nums.length>threshold){
+            return -1;
+        }
+        int left =1;
+        int high = Arrays.stream(nums).max().getAsInt();
+        int ans = -1;
+        while(left<=high){
+            int mid = left+(high-left)/2;
+            int smallest_divisor = calculateSum(nums,mid);
+              if(smallest_divisor<=threshold){
+                ans = mid;
+                high = mid-1;
+              }
+              else{
+                left = mid+1;
+              }
+        }
+        return ans;
+    }
+}
