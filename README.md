@@ -117,6 +117,7 @@ Daily LeetCode DSA questions in Java
 - Permutation in String
 - Rotate by 90 Degree
 ## Day 39
-
+- Running Sum of 1D array
+- Square of a Sorted Array
 
 
