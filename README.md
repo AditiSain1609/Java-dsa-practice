@@ -123,6 +123,10 @@ Daily LeetCode DSA questions in Java
 - Isomorphic String
 - Ransom Note
 ## Day 41
+- Valid Anagram
+- Word Pattern
+## Day 42
+
 
 
 
