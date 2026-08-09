@@ -129,7 +129,10 @@ Daily LeetCode DSA questions in Java
 - Delete Head of Linked List
 - Insertion at the head of Linked List
 ## Day 43 
--
+- Delete Node in a Linked List
+- Length of Linked List
+## Day 44 
+
 
 
 
