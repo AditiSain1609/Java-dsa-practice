@@ -126,6 +126,10 @@ Daily LeetCode DSA questions in Java
 - Valid Anagram
 - Word Pattern
 ## Day 42
+- Delete Head of Linked List
+- Insertion at the head of Linked List
+## Day 43 
+-
 
 
 
