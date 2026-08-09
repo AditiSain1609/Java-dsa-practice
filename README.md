@@ -119,5 +119,10 @@ Daily LeetCode DSA questions in Java
 ## Day 39
 - Running Sum of 1D array
 - Square of a Sorted Array
+## Day 40 
+- Isomorphic String
+- Ransom Note
+## Day 41
+
 
 
