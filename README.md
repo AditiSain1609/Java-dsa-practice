@@ -132,6 +132,10 @@ Daily LeetCode DSA questions in Java
 - Delete Node in a Linked List
 - Length of Linked List
 ## Day 44 
+- Middle of the Linked List
+- Search in Linked List
+## Day 45 
+-
 
 
 
