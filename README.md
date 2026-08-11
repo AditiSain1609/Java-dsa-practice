@@ -135,7 +135,10 @@ Daily LeetCode DSA questions in Java
 - Middle of the Linked List
 - Search in Linked List
 ## Day 45 
--
+- Detect Loop in a Linked List
+- Find the Starting point of loop in Linked List
+## Day 46
+- 
 
 
 
