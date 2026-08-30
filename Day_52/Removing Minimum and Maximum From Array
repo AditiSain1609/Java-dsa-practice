@@ -1,0 +1,32 @@
+class Solution {
+    public int minimumDeletions(int[] nums) {
+        int n = nums.length;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int min_step = 0;
+        int max_step =0;
+        for(int i = 0;i<n;i++){
+            if(nums[i]<min){
+                min = nums[i];
+                min_step = i;
+            }
+        if(nums[i]>max){
+            max = nums[i];
+            max_step = i;
+        }
+
+
+        }
+
+  int left = Math.min(min_step,max_step);
+   int right = Math.max(min_step,max_step);
+   // case 1st : move from left 
+   int bothleft = right +1;
+   // case 2nd : move from right 
+   int bothright = n-left;
+   // move one left and one right
+   int one_left_one_right = (left+1) + (n-right);
+
+return Math.min(bothleft,Math.min(bothright,one_left_one_right));
+    }
+}
