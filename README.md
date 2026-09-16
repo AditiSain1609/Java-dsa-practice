@@ -169,7 +169,7 @@ Daily LeetCode DSA questions in Java
 - Ugly Number
 ## Day 56 
 - Rotate List
-- 
+- Swap nodes in Pairs
 ## Day 57 
 - Count Range in Range
 - Count Commas in Range II
