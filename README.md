@@ -138,9 +138,51 @@ Daily LeetCode DSA questions in Java
 - Detect Loop in a Linked List
 - Find the Starting point of loop in Linked List
 ## Day 46
+- Cycle Length in Linked List
+- Segregate odd and even nodes in Linked List
+## Day 47
+- Delete the middle of Linked List
+- Remove Nth Node From End of List
+## Day 48
+- Intersection of Two Linked List
+- Sort List
+## Day 49
+- Add one to a number represented by LL
+- Partition_List
+## Day 50 
+- Concatenation of Array
+- Shuffle the Array
+## Day 51
+- How Many Numbers Are Smaller than Current Number
+-  Set Mismatch
+## Day 52 
+- Fizz Buzz
+- Removing Minimum and Maximum from Array
+## Day 53 
+- Smallest Stable Index I
+- Smallest Stable Index ||
+## Day 54
+- Number of Step to reduce a Number to zero
+- Palindrome Number
+## Day 55 
+- Distinct Subsequences ||
+- Ugly Number
+## Day 56 
+- Rotate List
 - 
-
-
-
+## Day 57 
+- Count Range in Range
+- Count Commas in Range II
+## Day 58 
+- Perfect Number
+- Unique 3-digit Even Numbers
+## Day 59 
+- Fibonacci Number
+- Find the Peaks
+## Day 60 
+- Daily Temperatures
+- Power Using Recursion
+## Day 61
+- 
 
 
