@@ -186,6 +186,9 @@ Daily LeetCode DSA questions in Java
 - Reverse String
 - To Lower Case
 ## Day 62
-- 
+- Circle and Rectangle Overlapping
+- Perfect Square
+## Day 63
+-
 
 
