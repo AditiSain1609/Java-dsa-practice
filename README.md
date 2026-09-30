@@ -190,11 +190,17 @@ Daily LeetCode DSA questions in Java
 - Perfect Square
 ## Day 63
 - Length of Last Word
--
+- Valid Anagram
 ## Day 64 
 - Largest Odd number in String
 - Valid Palindrome
 ## Day 65
--
+- Longest Common Prefix
+- Rotate Stirng
+## Day 66 
+- Add Strings
+- Sort Character By Frequency
+## Day 67
+
 
 
