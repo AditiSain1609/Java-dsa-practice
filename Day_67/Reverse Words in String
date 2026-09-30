@@ -1,0 +1,35 @@
+class Solution {
+    public String reverseWords(String s) {
+        int i = 0;
+        int j = s.length()-1;
+        StringBuilder  ans = new StringBuilder();
+        while(i<=j){
+            if(s.charAt(i) == ' ' && i<j){
+                i++;
+            }
+            else if(s.charAt(j) == ' ' && i<j){
+                j--;
+            }
+            else{
+                 StringBuilder ending = new StringBuilder();
+           while( j>=i && s.charAt(j) != ' ' ){
+          
+           
+            ending.append( s.charAt(j));
+          
+            j--;
+           }
+           ending.reverse();
+           if(ans.length()>0){
+            ans.append( " ");
+           }
+           ans.append(ending);
+        
+           
+        }
+        
+        
+         }
+    return ans.toString();
+    }
+}
