@@ -1,0 +1,30 @@
+class Solution {
+    public String encode(String arr[]) {
+        int n = arr.length;
+        StringBuilder str = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            int len = arr[i].length();
+            str.append(len);
+            str.append("/:");
+            str.append(arr[i]);
+        }
+        return str.toString();
+    }
+    public ArrayList<String> decode(String s) {
+        ArrayList<String> ans = new ArrayList<>();
+        int i = 0;
+        while (i < s.length()) {
+            StringBuilder num = new StringBuilder();
+            while (i < s.length() && s.charAt(i) != '/') {
+                num.append(s.charAt(i));
+                i++;
+            }
+            int len = Integer.parseInt(num.toString());
+            i += 2;
+            String word = s.substring(i, i + len);
+            ans.add(word);
+            i += len;
+        }
+        return ans;
+    }
+}
