@@ -201,6 +201,12 @@ Daily LeetCode DSA questions in Java
 - Add Strings
 - Sort Character By Frequency
 ## Day 67
+- Encode and Decode String
+- Reverse Words in String
+## Day 68 
+- Sum of Square of Special Elements
+- Valid Parenthesis String
+## Day 69 
 
 
 
