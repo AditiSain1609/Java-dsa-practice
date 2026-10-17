@@ -1,0 +1,49 @@
+class Solution {
+    public int minSwaps(int[] nums) {
+        int n = nums.length;
+        int[] ans = new int[nums.length];
+        for(int i = 0;i<n;i++ ){
+            int digit = nums[i];
+            int sum = 0;
+            while(digit >0){
+                  
+                  int num = digit%10;
+                  sum += num;
+                  digit = digit/10;
+            }
+            ans[i] = sum;
+        }
+    // to maintin the original array order based on index
+    Integer[] orderd = new Integer[n];
+    for(int i =0;i<n;i++){
+        orderd[i] = i;
+    }
+
+    // sort the orderd array 
+    Arrays.sort(orderd,(a,b) ->
+    {
+        if(ans[a] != ans[b]){
+            return Integer.compare(ans[a] , ans[b]);
+        }
+        return Integer.compare(nums[a],nums[b]);
+    });
+
+    int swapped = 0;
+    boolean[] visited = new boolean[n];
+    for(int i = 0;i<n;i++){
+        if(visited[i] || orderd[i]==i ){
+            continue;
+        }
+        int j = i;
+        int cyclelife = 0;
+        while(!visited[j]){
+            visited[j] = true;
+            j = orderd[j];
+            cyclelife++;
+        }
+        swapped+= cyclelife -1;
+    }
+    return swapped;
+    }
+}
+
