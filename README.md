@@ -207,6 +207,14 @@ Daily LeetCode DSA questions in Java
 - Sum of Square of Special Elements
 - Valid Parenthesis String
 ## Day 69 
-
+- Replace Elements with Greatest element on right side
+- Subarray Distinct elements Sum of square I
+## Day 70
+- Aggressive Cows
+- Minimum Swap to Sort by Digit Sum
+## Day 71
+- Kth Misising Postitive Number
+- Sqrt(x)
+## Day 72
 
 
