@@ -1,0 +1,28 @@
+lass Solution {
+    public int longestMonotonicSubarray(int[] nums) {
+        int length= 1;
+        int stricklength = 0;
+        for(int i=1;i<nums.length;i++){
+             if(nums[i-1]<nums[i]){
+                    length++;
+                }
+                else{
+                    length = 1;
+                }
+                stricklength = Math.max(stricklength,length);
+            }
+        int struckdecrease = 1;
+        int count = 1;
+        for(int i=1;i<nums.length;i++){
+            if(nums[i-1] >nums[i]){
+               count ++;
+            }
+            else{
+                count =1;
+            }
+            struckdecrease = Math.max(struckdecrease,count);
+        }
+        int ans = Math.max(stricklength,struckdecrease);
+        return ans;
+    }
+}
