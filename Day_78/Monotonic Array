@@ -1,0 +1,21 @@
+lass Solution {
+    public boolean isMonotonic(int[] nums) {
+        int n = nums.length;
+        boolean incre = true;
+        boolean decr = true;
+        for(int i =1;i<n;i++){
+            if(!(nums[i-1]<=nums[i])){
+               incre = false;
+            }
+        }
+        for(int j = 1;j<n;j++){
+            if(! (nums[j-1] >= nums[j])){
+                decr = false;
+            }
+        }
+        if(incre == false && decr == false){
+            return false;
+        }
+        return true;
+    }
+}
